@@ -2,9 +2,6 @@
 
 <ul>
     <li>
-    <h3><a href="<?= URLROOT; ?>/countries/index">show countriessssss</a></h3>
-    </li>
-    <li>
-       <h3><a href="<?= URLROOT; ?>/users/index">show names</a></h3> 
+    <h3><a href="<?= URLROOT; ?>/RichestPeoples/index">show richest people!</a></h3>
     </li>
 </ul>

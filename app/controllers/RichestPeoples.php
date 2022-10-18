@@ -1,19 +1,19 @@
 <?php
 
-class Countries extends Controller
+class RichestPeoples extends Controller
 {
     //properties
-    private $countryModel;
+    private $richestModel;
 
     // Dit is de constructor van de controller
     public function __construct() 
     {
-        $this->countryModel = $this->model('RichestPeople');
+        $this->richestModel = $this->model('RichestPeople');
     }
 
     public function index()
     {
-        $records = $this->countryModel->get();
+        $records = $this->richestModel->getRichestPeople();
         //var_dump($records);
 
         $rows = '';
@@ -23,11 +23,9 @@ class Countries extends Controller
             $rows .= "<tr>
                         <td>$items->Id</td>
                         <td>$items->Name</td>
-                        <td>$items->CapitalCity</td>
-                        <td>$items->Continent</td>
-                        <td>$items->Population</td>
-                        <td><a href='" . URLROOT . "/countries/update/$items->Id'>Update</a></td>
-                        <td><a href='" . URLROOT . "/countries/delete/$items->Id'>Delete</a></td>
+                        <td>$items->Nettoworth</td>
+                        <td>$items->Age</td>
+                        <td>$items->Company</td>
                       </tr>";
         }
 
@@ -38,7 +36,7 @@ class Countries extends Controller
             'description' => "Hier kan je een overzicht van informatie vinden van allemaal verschillende landen,<br> Je kan hier de populatie, hoofdstad en land vinden. <br> Zo kan je meer informatie opdoen over andere landen",
             'onzin' => "Dit is een onzinnig stukje tekst"
         ];
-        $this->view('countries/index', $data);
+        $this->view('RichestPeople/index', $data);
     }
 
 
