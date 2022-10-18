@@ -1,6 +1,6 @@
 <ul>
     <li>
-        <a href="<?= URLROOT; ?>/landingpages/index">Ga terug naar de hoofdpagina!</a>
+        <a href="<?= URLROOT; ?>/landingpages/index">Ga terug naar de hoofdpagina</a>
     </li>
 </ul>
 
