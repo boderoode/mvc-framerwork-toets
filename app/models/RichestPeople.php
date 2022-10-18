@@ -28,6 +28,12 @@ class RichestPeople
         return $this->db->single();
     }
 
-    
+    public function deleteRichestPeople($id)
+    {
+       
+        $this->db->query("DELETE FROM RichestPeople WHERE Id = :id");
+        $this->db->bind(':id', $id, PDO::PARAM_INT);
+        return $this->db->execute();
+    }
 
 }
