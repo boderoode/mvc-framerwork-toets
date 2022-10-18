@@ -7,7 +7,7 @@
 <h1><?= $data['title'] ?> <br></h1>
 <h4><?= $data['description']?></h4>
 
-<a href="<?= URLROOT ?>/countries/create">Nieuw record</a>
+<a href="<?= URLROOT ?>/RichestPeople/create">Nieuw record</a>
 
 <table>
     <thead>

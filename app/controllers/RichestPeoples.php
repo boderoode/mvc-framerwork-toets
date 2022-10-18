@@ -8,12 +8,12 @@ class Countries extends Controller
     // Dit is de constructor van de controller
     public function __construct() 
     {
-        $this->countryModel = $this->model('Country');
+        $this->countryModel = $this->model('RichestPeople');
     }
 
-    public function index($land = 'Nederland', $age = 67)
+    public function index()
     {
-        $records = $this->countryModel->getCountries();
+        $records = $this->countryModel->get();
         //var_dump($records);
 
         $rows = '';

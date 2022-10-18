@@ -6,6 +6,6 @@
 
     define('APPROOT', dirname(dirname(__FILE__)));
 
-    define('URLROOT', 'http://www.mvc-framework.nl/');
+    define('URLROOT', 'http://mvc-oop-toets.com');
 
-    define('SITENAME', 'mvc-2109a');
+    define('SITENAME', 'mvc-oop-toets.com');
