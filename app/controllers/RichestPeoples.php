@@ -26,7 +26,7 @@ class RichestPeoples extends Controller
                         <td>$items->Nettoworth</td>
                         <td>$items->Age</td>
                         <td>$items->Company</td>
-                        <td><a href='" . URLROOT . "/RichestPeople/delete/$items->Id'>Delete</a></td>
+                        <td><a href='" . URLROOT . "/RichestPeoples/delete/$items->Id'>Delete</a></td>
                       </tr>";
         }
 
@@ -47,10 +47,10 @@ class RichestPeoples extends Controller
         //var_dump($result);
         if ($result) {
             echo "Het record is verwijderd uit de database";
-            header("Refresh: 3; URL=" . URLROOT . "/RichestPeople/index");
+            header("Refresh: 3; URL=" . URLROOT . "/RichestPeoples/index");
         } else {
             echo "Internal servererror, het record is niet verwijderd";
-            header("Refresh: 3; URL=" . URLROOT . "/RichestPeople/index");
+            header("Refresh: 3; URL=" . URLROOT . "/RichestPeoples/index");
         }
     }
 
